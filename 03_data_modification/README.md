@@ -1,6 +1,6 @@
 # Data Modification (DML)
 
-This folder contains examples of INSERT, UPDATE, and DELETE operations.
+This folder contains examples of INSERT, UPDATE, and DELETE operations. 
 
 The scripts demonstrate:
 - Adding and updating payment terms
