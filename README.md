@@ -1,91 +1,71 @@
 # SQL Portfolio
 
-This repository showcases curated SQL work that reflects both **foundational database
-skills** and **applied, end-to-end data analysis projects**.
+This repository showcases my SQL work through **applied data analysis projects**
+and **core SQL patterns used in business and analytics contexts**.
 
-The structure of the repository is intentional:
-- **Projects/** contains complete SQL case studies using real datasets
-- **sql_coursework/** contains numbered folders that represent a progression of
-  SQL concepts and backend-oriented skills
-
-I did not upload every assignment or exercise. Instead, I selected work that best
-demonstrates how I use SQL for data analysis, data quality checks, and integration
-with real programs.
+The focus is on using SQL to clean, validate, and analyze data in ways that
+support real analytical questions.
 
 ---
 
-## Applied SQL Projects (End-to-End Case Studies)
+## Repository Structure
 
-These projects follow a full data workflow:
-**raw data → cleaning → validation → analysis → documented insights**
+This repository is organized into two main sections, each serving a different
+purpose in demonstrating my SQL skills.
 
-### World Life Expectancy Analysis
-Analyzes global life expectancy trends across countries and years, with a focus on
-data quality, time-based analysis, and relationships between health and economic
-indicators.
+### Projects/
+Contains end-to-end SQL analysis projects using real, public datasets.  
+These focus on the full analytical workflow: data cleaning, validation,
+exploration, and drawing insights from imperfect data.
 
-**Highlights:**
-- Cleaning inconsistent and missing values
-- Time-series aggregation and trend analysis
-- Validation checks for data integrity
+This section reflects how SQL is used in real analyst work.
 
-📁 `Projects/world-life-expectancy`
+### sql_business_analysis/
+Contains curated SQL examples that demonstrate core query patterns and database
+concepts commonly used in business and analytics roles.  
+The folders are numbered to show skill progression, covering areas such as
+aggregation, joins, schema design, and data modification in realistic business
+scenarios.
 
----
-
-### US Household Income Analysis
-Explores household income patterns across U.S. states, cities, and household types
-by joining geographic data with income statistics.
-
-**Highlights:**
-- Standardizing categorical data
-- Working with multiple related tables
-- Geographic and demographic comparisons
-
-📁 `Projects/us-household-income`
+Together, these sections show both foundational SQL knowledge and its practical
+application.
 
 ---
 
-## SQL Coursework (Numbered Skill Progression)
+## Applied SQL Projects
 
-This section contains focused SQL work from my university database course.
-The folders are **numbered to reflect conceptual progression**, from query fundamentals
-to schema design and application-level integration.
+- **World Life Expectancy Analysis**  
+  Global trends analysis with a focus on data quality, time-based insights, and
+  socioeconomic indicators  
+  📁 `Projects/world-life-expectancy`
 
-### 01 — Advanced Queries
-Practice with joins, grouping, unions, and subqueries on a realistic dataset.
-
-📁 `sql_coursework/01_advanced_queries`
-
----
-
-### 02 — Database Design
-Relational schema design and ER modeling using MySQL Workbench, including forward
-engineering and constraint enforcement.
-
-📁 `sql_coursework/02_database_design`
+- **US Household Income Analysis**  
+  Income comparisons across states, cities, and household classifications  
+  📁 `Projects/us-household-income`
 
 ---
 
-### 03 — Data Modification
-Insert, update, and delete operations implemented with business logic and data
-integrity considerations.
+## SQL Business Analysis
 
-📁 `sql_coursework/03_data_modification`
+- **01 — Advanced Queries**  
+  Aggregation, joins, rollups, and subqueries for common business questions
+
+- **02 — Database Design**  
+  Relational schema design and ER modeling using MySQL Workbench
+
+- **03 — Data Modification**  
+  Insert, update, and delete operations with business rules and data integrity
+
+- **04 — Student Course Scheduler**  
+  Python + MySQL application demonstrating SQL integration in a real program
+
+📁 `sql_business_analysis/`
 
 ---
 
-### 04 — Student Course Scheduler (Python + MySQL)
-A small backend-oriented application demonstrating how SQL integrates with a real
-program to manage students, courses, and enrollments.
+## Tools
+- SQL (MySQL)
+- Python
+- Relational database design
 
-📁 `sql_coursework/04_student_course_scheduler`
-
----
-
-## Notes
-- SQL dialect: MySQL
-- Public datasets are included in project folders where appropriate
-- Projects emphasize data quality, reproducibility, and analytical reasoning
-
-This repository will continue to evolve as I add more applied SQL projects.
+Detailed explanations and business context are provided within each folder.
