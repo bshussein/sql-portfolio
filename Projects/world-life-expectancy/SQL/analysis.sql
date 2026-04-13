@@ -126,3 +126,28 @@ SELECT
   ) AS rolling_mortality
 FROM world_life_expectancy
 WHERE Country LIKE '%United%';
+
+/* -----------------------------------------------------
+   9) Countries with strongest life expectancy improvement
+   Purpose:
+   Rank countries by long-term improvement in life expectancy
+   using a structured two-step query.
+   ----------------------------------------------------- */
+WITH country_life_change AS (
+  SELECT
+    Country,
+    MIN(Lifeexpectancy) AS min_lifeexp,
+    MAX(Lifeexpectancy) AS max_lifeexp,
+    ROUND(MAX(Lifeexpectancy) - MIN(Lifeexpectancy), 1) AS life_increase_15_years
+  FROM world_life_expectancy
+  GROUP BY Country
+  HAVING MIN(Lifeexpectancy) <> 0
+     AND MAX(Lifeexpectancy) <> 0
+)
+SELECT
+  Country,
+  min_lifeexp,
+  max_lifeexp,
+  life_increase_15_years
+FROM country_life_change
+ORDER BY life_increase_15_years DESC;
